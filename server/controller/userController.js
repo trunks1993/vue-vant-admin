@@ -13,12 +13,20 @@ const getUserInfo = async (ctx, next) => {
 
 const login = async (ctx, next) => {
 	const user = ctx.request.body
-	const userId = await userService.login(user)
-	ctx.body = {
-  	success: true,
-    data: {
-      userId,
-      token: jwt.sign({userId: userId}, jwtObj.secret, { expiresIn: jwtObj.expiresIn })
+	const userInfo = await userService.login(user)
+  if (userInfo) {
+  	ctx.body = {
+    	success: true,
+      data: {
+        userId: userInfo.id,
+        token: jwt.sign({userId: userInfo.id}, jwtObj.secret, { expiresIn: jwtObj.expiresIn })
+      }
+    }
+  } else {
+    ctx.body = {
+      success: false,
+      data: {},
+      msg: '用户名或密码错误'
     }
   }
 }

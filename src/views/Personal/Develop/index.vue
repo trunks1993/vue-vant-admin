@@ -6,6 +6,17 @@
         <button-tab-item @on-item-click='onItemClick'>代理审核</button-tab-item>
         <button-tab-item @on-item-click='onItemClick'>升级审核</button-tab-item>
       </button-tab> -->
+      <van-tabs type="card">
+        <van-tab title="发展代理">
+          
+        </van-tab>
+        <van-tab title="代理审核">
+          
+        </van-tab>
+        <van-tab title="升级审核">
+          
+        </van-tab>
+      </van-tabs>
     </div>
     <div class="develop-container" v-if="activityIndex === 0">
       <!-- <divider>生成下级代理链接</divider> -->

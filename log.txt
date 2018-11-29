@@ -23,3 +23,64 @@ GET /api/user/getUserInfo 1ms
 GET /api/user/getUserInfo 2ms 
 GET /api/user/getUserInfo 1ms 
 GET /api/user/getUserInfo 2ms 
+【token验证错误！】GET /api/user/getUserInfo 3ms 
+server errorError: Unknown column 'phone' in 'where clause'
+{"request":{"method":"POST","url":"/api/user/login","header":{"x-forwarded-host":"localhost:8080","x-forwarded-proto":"http","x-forwarded-port":"8080","x-forwarded-for":"127.0.0.1","accept-language":"zh-CN,zh;q=0.9,en;q=0.8","accept-encoding":"gzip, deflate, br","referer":"http://localhost:8080/login?redirect=%2Fanswer","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1","origin":"http://localhost:8080","accept":"application/json, text/plain, */*","content-length":"43","connection":"close","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/login","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/login 14ms 
+GET /api/user/getUserInfo 15ms 
+GET /api/user/getUserInfo 15ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 20ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 149ms 
+POST /api/user/login 4ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 8ms 
+POST /api/user/login 10ms 
+GET /api/user/getUserInfo 2ms 
+POST /api/user/login 1ms 
+POST /api/user/login 8ms 
+POST /api/user/login 3ms 
+GET /api/user/getUserInfo 2ms 
+POST /api/user/login 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 1ms 
+GET /api/user/getUserInfo 2ms 
+server errorTypeError: Cannot read property 'id' of undefined
+{"request":{"method":"POST","url":"/api/user/login","header":{"x-forwarded-host":"10.10.10.131:8080","x-forwarded-proto":"http","x-forwarded-port":"8080","x-forwarded-for":"10.10.10.104","accept-encoding":"gzip,deflate","referer":"http://10.10.10.131:8080/login?redirect=%2Fpersonal","accept-language":"zh-cn","origin":"http://10.10.10.131:8080","content-type":"application/json;charset=UTF-8","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X; zh-CN) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/16A366 UCBrowser/11.6.1.1003 Mobile  AliApp(TUnionSDK/0.1.20)","content-length":"40","connection":"close","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/login","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorTypeError: Cannot read property 'id' of undefined
+{"request":{"method":"POST","url":"/api/user/login","header":{"x-forwarded-host":"10.10.10.131:8080","x-forwarded-proto":"http","x-forwarded-port":"8080","x-forwarded-for":"10.10.10.104","accept-encoding":"gzip,deflate","referer":"http://10.10.10.131:8080/login?redirect=%2Fpersonal","accept-language":"zh-cn","origin":"http://10.10.10.131:8080","content-type":"application/json;charset=UTF-8","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X; zh-CN) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/16A366 UCBrowser/11.6.1.1003 Mobile  AliApp(TUnionSDK/0.1.20)","content-length":"32","connection":"close","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/login","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorTypeError: Cannot read property 'id' of undefined
+{"request":{"method":"POST","url":"/api/user/login","header":{"x-forwarded-host":"10.10.10.131:8080","x-forwarded-proto":"http","x-forwarded-port":"8080","x-forwarded-for":"10.10.10.104","accept-encoding":"gzip,deflate","referer":"http://10.10.10.131:8080/login?redirect=%2Fpersonal","accept-language":"zh-cn","origin":"http://10.10.10.131:8080","content-type":"application/json;charset=UTF-8","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X; zh-CN) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/16A366 UCBrowser/11.6.1.1003 Mobile  AliApp(TUnionSDK/0.1.20)","content-length":"42","connection":"close","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/login","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorTypeError: Cannot read property 'id' of undefined
+{"request":{"method":"POST","url":"/api/user/login","header":{"x-forwarded-host":"localhost:8080","x-forwarded-proto":"http","x-forwarded-port":"8080","x-forwarded-for":"127.0.0.1","accept-language":"zh-CN,zh;q=0.9,en;q=0.8","accept-encoding":"gzip, deflate, br","referer":"http://localhost:8080/login?redirect=%2Fanswer","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1","origin":"http://localhost:8080","accept":"application/json, text/plain, */*","content-length":"40","connection":"close","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/login","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/login 1ms 
+GET /api/user/getUserInfo 2ms 
+POST /api/user/login 1ms 
+GET /api/user/getUserInfo 2ms 
+server errorTypeError: Cannot read property 'id' of undefined
+{"request":{"method":"POST","url":"/api/user/login","header":{"x-forwarded-host":"localhost:8080","x-forwarded-proto":"http","x-forwarded-port":"8080","x-forwarded-for":"127.0.0.1","accept-language":"zh-CN,zh;q=0.9,en;q=0.8","accept-encoding":"gzip, deflate, br","referer":"http://localhost:8080/login?redirect=%2Fpersonal","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1","origin":"http://localhost:8080","accept":"application/json, text/plain, */*","content-length":"40","connection":"close","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/login","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/login 39ms 
+【token验证错误！】GET /api/user/getUserInfo 2ms 
+POST /api/user/login 3ms 
+POST /api/user/login 3ms 
+POST /api/user/login 1ms 
+POST /api/user/login 1ms 
+POST /api/user/login 2ms 
+POST /api/user/login 1ms 
+POST /api/user/login 1ms 
+POST /api/user/login 1ms 
+server errorReferenceError: userId is not defined
+{"request":{"method":"POST","url":"/api/user/login","header":{"x-forwarded-host":"10.10.10.131:8080","x-forwarded-proto":"http","x-forwarded-port":"8080","x-forwarded-for":"10.10.10.104","accept-encoding":"gzip,deflate","referer":"http://10.10.10.131:8080/login?redirect=%2Fpersonal","accept-language":"zh-cn","origin":"http://10.10.10.131:8080","content-type":"application/json;charset=UTF-8","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X; zh-CN) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/16A366 UCBrowser/11.6.1.1003 Mobile  AliApp(TUnionSDK/0.1.20)","content-length":"43","connection":"close","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/login","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorReferenceError: userId is not defined
+{"request":{"method":"POST","url":"/api/user/login","header":{"x-forwarded-host":"10.10.10.131:8080","x-forwarded-proto":"http","x-forwarded-port":"8080","x-forwarded-for":"10.10.10.104","accept-encoding":"gzip,deflate","referer":"http://10.10.10.131:8080/login?redirect=%2Fpersonal","accept-language":"zh-cn","origin":"http://10.10.10.131:8080","content-type":"application/json;charset=UTF-8","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X; zh-CN) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/16A366 UCBrowser/11.6.1.1003 Mobile  AliApp(TUnionSDK/0.1.20)","content-length":"43","connection":"close","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/login","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorReferenceError: userId is not defined
+{"request":{"method":"POST","url":"/api/user/login","header":{"x-forwarded-host":"10.10.10.131:8080","x-forwarded-proto":"http","x-forwarded-port":"8080","x-forwarded-for":"10.10.10.104","accept-encoding":"gzip,deflate","referer":"http://10.10.10.131:8080/login?redirect=%2Fpersonal","accept-language":"zh-cn","origin":"http://10.10.10.131:8080","content-type":"application/json;charset=UTF-8","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X; zh-CN) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/16A366 UCBrowser/11.6.1.1003 Mobile  AliApp(TUnionSDK/0.1.20)","content-length":"43","connection":"close","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/login","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/login 84ms 
+GET /api/user/getUserInfo 6ms 
+POST /api/user/login 3ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 1ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 1ms 

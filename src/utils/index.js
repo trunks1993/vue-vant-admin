@@ -1,6 +1,5 @@
 /* 合法手机号*/
 export function checkPhone(value) {
-  console.log(value);
   const reg = /^1[34578]\d{9}$/;
   return reg.test(value)
 }
@@ -12,10 +11,10 @@ export function param2Obj(url) {
   }
   return JSON.parse(
     '{"' +
-      decodeURIComponent(search)
-        .replace(/"/g, '\\"')
-        .replace(/&/g, '","')
-        .replace(/=/g, '":"') +
-      '"}'
+    decodeURIComponent(search)
+    .replace(/"/g, '\\"')
+    .replace(/&/g, '","')
+    .replace(/=/g, '":"') +
+    '"}'
   )
 }

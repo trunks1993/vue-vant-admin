@@ -9,7 +9,7 @@ const getUserById = async userId => {
 const login = async user => {
   const sql = 'SELECT id FROM t_user where phone = ? && password = ?'
   const [row] = await query(sql, [user.phone, user.password])
-  return row.id
+  return row
 }
 
 module.exports = {

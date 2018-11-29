@@ -22,9 +22,14 @@ const user = {
       return new Promise((resolve, reject) => {
         login(loginInfo).then(res => {
             const data = res.data
-            setToken(data.data.token)
-            commit('SET_TOKEN', data.data.token)
-            resolve()
+            if (data.success) {
+              setToken(data.data.token)
+              commit('SET_TOKEN', data.data.token)
+              resolve()
+            } else {
+              reject(data.msg)
+            }
+            
         }).catch(error => {
           reject(error)
         })

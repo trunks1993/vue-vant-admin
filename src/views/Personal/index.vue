@@ -76,17 +76,16 @@ export default {
     }
   }
 };
-
 </script>
 <style lang="less" scoped>
 .personal-container {
   .header {
-    height: 150px;
+    // height: 100px;
     width: 100%;
     background: #c8b185;
     border-radius: 0 0 40% 0;
     box-sizing: border-box;
-    padding: 65px 0 0 40px;
+    padding: 20px 0 20px 40px;
     font-size: 0;
     margin-bottom: 10px;
 
@@ -161,5 +160,4 @@ export default {
     }
   }
 }
-
 </style>
