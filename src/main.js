@@ -6,6 +6,7 @@ import '@/styles/index.less' // global css
 import '@/permission' // permission control
 import Vant from 'vant'
 import 'vant/lib/index.css'
+import 'amfe-flexible'
 
 Vue.use(Vant)
 Vue.config.productionTip = false

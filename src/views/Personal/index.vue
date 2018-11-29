@@ -75,7 +75,8 @@ export default {
       this.$router.push({ path })
     }
   }
-}
+};
+
 </script>
 <style lang="less" scoped>
 .personal-container {
@@ -153,10 +154,12 @@ export default {
 
   .btn-item {
     padding: 10px 0;
+
     .label {
       display: block;
       font-size: 14px;
     }
   }
 }
+
 </style>

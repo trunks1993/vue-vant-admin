@@ -23,8 +23,13 @@ export default {
     path() {
       return this.$route.path
     },
-    active() {
-      return this.$route.path === '/' ? 0 : this.$route.path === '/answer' ? 1 : 2
+    active: {
+      get: function() {
+        return this.$route.path === '/' ? 0 : this.$route.path === '/answer' ? 1 : 2
+      },
+      set: function() {
+
+      }
     }
   }
 }
@@ -49,5 +54,8 @@ a:-webkit-any-link {
       color: #42b983;
     }
   }
+}
+.van-tabbar-item--active {
+  color: #c8b185!important;
 }
 </style>
