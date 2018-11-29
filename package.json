@@ -1,0 +1,40 @@
+{
+  "name": "mobile-admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "server": "nodemon --delay 2000ms -w app.js -w server server-entry.js",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "concurrently -k \"npm run server\" \"npm run dev\""
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "js-cookie": "^2.2.0",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-jwt": "^3.5.1",
+    "koa-router": "^7.4.0",
+    "mysql2": "^1.6.4",
+    "vant": "^1.4.7",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "@vue/eslint-config-prettier": "^4.0.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^4.1.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "nodemon": "^1.18.7",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

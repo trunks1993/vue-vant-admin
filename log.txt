@@ -1,0 +1,6 @@
+POST /api/user/login 62ms 
+GET /api/user/getUserInfo 10ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 1ms 
+GET /api/user/getUserInfo 1ms 
+GET /api/user/getUserInfo 2ms 
