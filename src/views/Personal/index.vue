@@ -19,7 +19,7 @@
       <van-row>
         <van-col span="6" v-for="(m, i) in menus" :key="i">
           <div class="btn-item" @click="to(m.path)">
-            <img :src="m.icon" width="28px" height="28px;">
+            <img :src="m.icon">
             <span class="label">{{m.name}}</span>
           </div>
         </van-col>
@@ -29,7 +29,7 @@
       <van-row>
         <van-col span="6" v-for="(m, i) in menus2" :key="i">
           <div class="btn-item" @click="to(m.path)">
-            <img :src="m.icon" width="28px" height="28px;">
+            <img :src="m.icon">
             <span class="label">{{m.name}}</span>
           </div>
         </van-col>
@@ -153,6 +153,11 @@ export default {
 
   .btn-item {
     padding: 10px 0;
+    
+    img {
+      width: 28px;
+      height: 28px;
+    }
 
     .label {
       display: block;
