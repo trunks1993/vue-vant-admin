@@ -12,6 +12,8 @@
   "dependencies": {
     "amfe-flexible": "^2.2.1",
     "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "clipboard": "^2.0.4",
     "js-cookie": "^2.2.0",
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
@@ -21,7 +23,8 @@
     "vant": "^1.4.7",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "weixin-js-sdk": "^1.4.0-test"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "^3.0.5",
@@ -33,10 +36,14 @@
     "concurrently": "^4.1.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
+    "ioredis": "^4.2.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
+    "node-uuid": "^1.4.8",
     "nodemon": "^1.18.7",
     "postcss-pxtorem": "^4.0.1",
+    "request-promise": "^4.2.2",
+    "sha1": "^1.1.1",
     "vue-template-compiler": "^2.5.17"
   }
 }

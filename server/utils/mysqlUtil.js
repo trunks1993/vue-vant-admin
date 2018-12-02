@@ -1,5 +1,7 @@
 const mysql = require('mysql2')
 const config = require('./../../config/config.local.js')
+const Redis = require('ioredis')
+const redis = new Redis()
 
 const connectionPool = mysql.createPool({
   'host': config.database.host,
@@ -27,4 +29,16 @@ export const query = (sql, args) => {
       }
     })
   })
+}
+
+export const redisGet = key => {
+  return new Promise((resolve, reject) => {
+    redis.get(key, (err, res) => {
+      if (err) reject(err)
+      resolve(res)
+    })
+  })
+}
+export const redisSet = (key, value, ex) => {
+  redis.set(key, value, 'EX', ex)
 }

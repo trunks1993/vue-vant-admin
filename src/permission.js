@@ -8,7 +8,7 @@ router.beforeEach((to, from, next) => {
     if (to.path === '/login') {
       next({ path: '/' })
     } else {
-      if (!store.getters.userInfo.id) {
+      if (!store.getters.userInfo.user_id) {
         store.dispatch('GetUserInfo').then(res => {
           // 如果拉取用户信息成功则跳转页面，否则重新登录
           if (res) next()

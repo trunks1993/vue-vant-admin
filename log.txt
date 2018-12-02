@@ -84,3 +84,563 @@ GET /api/user/getUserInfo 2ms
 GET /api/user/getUserInfo 1ms 
 GET /api/user/getUserInfo 2ms 
 GET /api/user/getUserInfo 1ms 
+【token验证错误！】GET /api/user/getUserInfo 7ms 
+POST /api/user/login 7ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 10ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 1ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 1ms 
+【token验证错误！】GET /api/user/getUserInfo 7ms 
+POST /api/user/login 76ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 3ms 
+POST /api/user/login 2ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 5ms 
+GET /api/user/getUserInfo 514ms 
+GET /api/user/getUserInfo 70ms 
+GET /api/user/getUserInfo 33ms 
+GET /api/user/getUserInfo 271ms 
+GET /api/user/getUserInfo 74ms 
+GET /api/user/getUserInfo 55ms 
+GET /api/user/getUserInfo 64ms 
+GET /api/user/getUserInfo 123ms 
+POST /api/user/login 5ms 
+GET /api/user/getUserInfo 2ms 
+GET / 0ms 
+GET /favicon.ico 0ms 
+GET /getUserinfo 0ms 
+GET /getUserinfo 1ms 
+GET /getUserinfo 0ms 
+GET /sockjs-node/info?t=1543601385055 1ms 
+GET /sockjs-node/info?t=1543601392373 0ms 
+GET /sockjs-node/info?t=1543601403265 1ms 
+GET /sockjs-node/info?t=1543601422955 0ms 
+GET /sockjs-node/info?t=1543601458347 2ms 
+GET /getUserInfo 1ms 
+GET /getUserInfo 0ms 
+GET /getUserInfo 2ms 
+GET /favicon.ico 1ms 
+GET / 0ms 
+GET / 1ms 
+GET /?signature=14f817bcd2ac8a72ddbc3e0924f09651d37ee3e1&echostr=6363121177865978735&timestamp=1543602479&nonce=1049135707 1ms 
+GET /?signature=72d39100ee3c0c1b8513cc82d621bbf09962975a&echostr=2823649404796263403&timestamp=1543602497&nonce=2061274450 1ms 
+server errorReferenceError: sha1 is not defined
+{"request":{"method":"GET","url":"/?signature=621d8d5eea5007ccde216fcc1e751cb389438b7f&echostr=1544768810162029279&timestamp=1543602775&nonce=1058945610","header":{"host":"cd810525457e1965.natapp.cc","user-agent":"Mozilla/4.0","accept":"*/*","cache-control":"no-cache","connection":"Keep-Alive","pragma":"no-cache","x-natapp-ip":"140.207.54.79","x-real-ip":"140.207.54.79"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/?signature=621d8d5eea5007ccde216fcc1e751cb389438b7f&echostr=1544768810162029279&timestamp=1543602775&nonce=1058945610","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorReferenceError: sha1 is not defined
+{"request":{"method":"GET","url":"/?signature=2c3e45231fcc2a960be41de3a1c3da8063b97caf&echostr=8331774486087700155&timestamp=1543602843&nonce=721979584","header":{"host":"cd810525457e1965.natapp.cc","user-agent":"Mozilla/4.0","accept":"*/*","cache-control":"no-cache","connection":"Keep-Alive","pragma":"no-cache","x-natapp-ip":"140.207.54.79","x-real-ip":"140.207.54.79"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/?signature=2c3e45231fcc2a960be41de3a1c3da8063b97caf&echostr=8331774486087700155&timestamp=1543602843&nonce=721979584","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorTypeError: sha1 is not a function
+{"request":{"method":"GET","url":"/?signature=e1de04eb2d72ee33dd9dbc0660e9b9ee43355399&echostr=2757174104843326207&timestamp=1543602934&nonce=1463304013","header":{"host":"cd810525457e1965.natapp.cc","user-agent":"Mozilla/4.0","accept":"*/*","cache-control":"no-cache","connection":"Keep-Alive","pragma":"no-cache","x-natapp-ip":"140.207.54.79","x-real-ip":"140.207.54.79"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/?signature=e1de04eb2d72ee33dd9dbc0660e9b9ee43355399&echostr=2757174104843326207&timestamp=1543602934&nonce=1463304013","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorTypeError: sha1 is not a function
+{"request":{"method":"GET","url":"/?signature=20f4698ca6b719a7f47235ab7e6d13f55d597301&echostr=6780602692981588854&timestamp=1543602964&nonce=1855371017","header":{"host":"cd810525457e1965.natapp.cc","user-agent":"Mozilla/4.0","accept":"*/*","cache-control":"no-cache","connection":"Keep-Alive","pragma":"no-cache","x-natapp-ip":"140.207.54.79","x-real-ip":"140.207.54.79"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/?signature=20f4698ca6b719a7f47235ab7e6d13f55d597301&echostr=6780602692981588854&timestamp=1543602964&nonce=1855371017","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+GET /?signature=d86720d7bf2ce4200061c0ec4f402b8a28a3f355&echostr=459314584578800439&timestamp=1543602999&nonce=1551995661 1ms 
+GET /?signature=5e49ca7be23359b64ac183e2272d0a84940e4461&echostr=5939138859832701951&timestamp=1543603099&nonce=340515553 2ms 
+POST /?signature=9f97380b09b1cae64e49aa5f801ff0a87f601c97&timestamp=1543604342&nonce=1851834221&openid=oEHFj5_aTMaJETQg3D5iZ8Sjf-dY 4ms 
+【token验证错误！】GET /api/user/getWxUserInfo?code=071XykUc0cYLcB18PBRc01mcUc0XykUK 5ms 
+【token验证错误！】GET /api/user/getWxUserInfo?code=071XykUc0cYLcB18PBRc01mcUc0XykUK 0ms 
+【token验证错误！】GET /api/user/getWxUserInfo?code=071XykUc0cYLcB18PBRc01mcUc0XykUK 5ms 
+【token验证错误！】GET /api/user/getWxUserInfo?code=071XykUc0cYLcB18PBRc01mcUc0XykUK 4ms 
+【token验证错误！】GET /api/user/getWxUserInfo?code=071XykUc0cYLcB18PBRc01mcUc0XykUK 7ms 
+【token验证错误！】GET /api/user/getWxUserInfo?code=071XykUc0cYLcB18PBRc01mcUc0XykUK 7ms 
+【token验证错误！】GET /api/user/getWxUserInfo?code=071XykUc0cYLcB18PBRc01mcUc0XykUK 5ms 
+【token验证错误！】GET /api/user/getWxUserInfo?code=071XykUc0cYLcB18PBRc01mcUc0XykUK 11ms 
+GET /api/user/getWxUserInfo 9ms 
+GET /api/user/getWxUserInfo 1ms 
+POST /api/user/getWxUserInfo 0ms 
+POST /api/user/getWxUserInfo 7ms 
+POST /api/user/getWxUserInfo 1ms 
+POST /api/user/getWxUserInfo 0ms 
+POST /api/user/getWxUserInfo 7ms 
+POST /api/user/getWxUserInfo 335ms 
+POST /api/user/getWxUserInfo 300ms 
+POST /api/user/getWxUserInfo 233ms 
+POST /api/user/getWxUserInfo 300ms 
+POST /api/user/getWxUserInfo 1374ms 
+POST /api/user/getWxUserInfo 464ms 
+POST /api/user/getWxUserInfo 537ms 
+server errorReferenceError: access_token is not defined
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=001MWC8i0wY0mx1AAw9i0Gvj8i0MWC8b&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorReferenceError: access_token is not defined
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=001EiYu62XGAhR0AV9t62dPSu62EiYue&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 556ms 
+POST /api/user/getWxUserInfo 21ms 
+server errorTypeError: (0 , _requestPromise.rp) is not a function
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=071aVam82QPE3K06Prn824njm82aVamm&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 586ms 
+POST /api/user/getWxUserInfo 450ms 
+POST /api/user/getWxUserInfo 483ms 
+POST /api/user/getWxUserInfo 689ms 
+POST /api/user/getWxUserInfo 670ms 
+POST /api/user/getWxUserInfo 665ms 
+POST /api/user/getWxUserInfo 682ms 
+POST /api/user/getWxUserInfo 491ms 
+POST /api/user/getWxUserInfo 453ms 
+POST /api/user/getWxUserInfo 577ms 
+POST /api/user/getWxUserInfo 587ms 
+POST /api/user/getWxUserInfo 589ms 
+POST /api/user/getWxUserInfo 614ms 
+POST /api/user/getWxUserInfo 636ms 
+POST /api/user/getWxUserInfo 614ms 
+POST /api/user/getWxUserInfo 624ms 
+POST /api/user/getWxUserInfo 605ms 
+POST /api/user/getWxUserInfo 655ms 
+POST /api/user/getWxUserInfo 610ms 
+POST /api/user/getWxUserInfo 711ms 
+POST /api/user/getWxUserInfo 635ms 
+POST /api/user/getWxUserInfo 656ms 
+POST /api/user/getWxUserInfo 602ms 
+POST /api/user/getWxUserInfo 539ms 
+POST /api/user/getWxUserInfo 556ms 
+POST /api/user/getWxUserInfo 667ms 
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=011Hyn7B0o6sAh2IdD7B0F987B0Hyn7V&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'updata_time = '2018-12-1 20:56:19' WHERE openid = 'oEHFj5_aTMaJETQg3D5iZ8Sjf-dY'' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=061H69Yv0c94Ra13muZv0JQsYv0H69Y3&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'updata_time = 2018-12-1 20:57:27 WHERE openid = 'oEHFj5_aTMaJETQg3D5iZ8Sjf-dY'' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=001WOg2215XfZP1n4K121OMA221WOg27&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=081vNdA00GaV1H1co0D00j6Tz00vNdAU&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=081vNdA00GaV1H1co0D00j6Tz00vNdAU&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=081vNdA00GaV1H1co0D00j6Tz00vNdAU&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=011pfim60xAVJD1v4ul60kufm60pfim2&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 602ms 
+POST /api/user/getWxUserInfo 669ms 
+POST /api/user/getWxUserInfo 709ms 
+POST /api/user/getWxUserInfo 651ms 
+POST /api/user/getWxUserInfo 597ms 
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=021O5tWR1lruZ31kYzUR1wuvWR1O5tWE&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 639ms 
+POST /api/user/getWxUserInfo 663ms 
+POST /api/user/getWxUserInfo 678ms 
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update_time='2018-12-1 21:22:56' WHERE openid = 'oEHFj5_aTMaJETQg3D5iZ8Sjf-dY'' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=011WWjqh0SvDDw1AWMoh0jChqh0WWjqZ&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update_time=2018-12-1 21:23:30 WHERE openid = 'oEHFj5_aTMaJETQg3D5iZ8Sjf-dY'' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0117fsy10d6a0I17S7x10FLky107fsyh&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update_time= '2018-12-1 21:25:19' WHERE openid = 'oEHFj5_aTMaJETQg3D5iZ8Sjf-dY'' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=061ksZ261jnIZT1PzTZ51Ofg361ksZ2f&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 677ms 
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update_time='2018-12-1 21:32:13' WHERE openid = 'oEHFj5_aTMaJETQg3D5iZ8Sjf-dY'' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=011p53oE0Ob1Qk2opPpE0xNdoE0p53og&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update_time='2018-12-1 21:34:14' WHERE openid = 'oEHFj5_aTMaJETQg3D5iZ8Sjf-dY'' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=021qVadQ061Kq520OwbQ0e5gdQ0qVad8&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update_time='长沙' WHERE openid = 'oEHFj5_aTMaJETQg3D5iZ8Sjf-dY'' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=081jhKp71HIhhM18Kzp71M4Hp71jhKp3&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create_time='长沙' WHERE openid = 'oEHFj5_aTMaJETQg3D5iZ8Sjf-dY'' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=071NTQWj2XL9vD01PjXj2s60Xj2NTQWx&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 584ms 
+POST /api/user/getWxUserInfo 673ms 
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0616ygam0rppis1D2icm0oBdam06ygah&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0616ygam0rppis1D2icm0oBdam06ygah&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0616ygam0rppis1D2icm0oBdam06ygah&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0616ygam0rppis1D2icm0oBdam06ygah&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0616ygam0rppis1D2icm0oBdam06ygah&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":200,"message":"OK","header":{"content-type":"application/json; charset=utf-8"}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0616ygam0rppis1D2icm0oBdam06ygah&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":200,"message":"OK","header":{"content-type":"application/json; charset=utf-8"}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0616ygam0rppis1D2icm0oBdam06ygah&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0616ygam0rppis1D2icm0oBdam06ygah&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0616ygam0rppis1D2icm0oBdam06ygah&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":200,"message":"OK","header":{"content-type":"application/json; charset=utf-8"}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0616ygam0rppis1D2icm0oBdam06ygah&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":200,"message":"OK","header":{"content-type":"application/json; charset=utf-8"}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 323ms 
+POST /api/user/getWxUserInfo 391ms 
+POST /api/user/getWxUserInfo 247ms 
+POST /api/user/getWxUserInfo 225ms 
+POST /api/user/getWxUserInfo 181ms 
+POST /api/user/getWxUserInfo 216ms 
+POST /api/user/getWxUserInfo 245ms 
+server errorReferenceError: userInfo is not defined
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=081YftyG1anH500q1myG1BZOyG1YftyP&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 199ms 
+server errorReferenceError: userInfo is not defined
+{"request":{"method":"POST","url":"/api/user/getWxUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=061kJWMT11JVP510eILT1XMTMT1kJWM6&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"43","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getWxUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 658ms 
+POST /api/user/getWxUserInfo 240ms 
+POST /api/user/getWxUserInfo 617ms 
+GET /api/user/getWxUserInfo 1ms 
+POST /api/user/getWxUserInfo 214ms 
+POST /api/user/getWxUserInfo 190ms 
+POST /api/user/getWxUserInfo 536ms 
+POST /api/user/getWxUserInfo 233ms 
+POST /api/user/getWxUserInfo 210ms 
+POST /api/user/getWxUserInfo 513ms 
+POST /api/user/getWxUserInfo 270ms 
+POST /api/user/getWxUserInfo 193ms 
+POST /api/user/getWxUserInfo 249ms 
+POST /api/user/getWxUserInfo 259ms 
+POST /api/user/getWxUserInfo 241ms 
+POST /api/user/getWxUserInfo 228ms 
+POST /api/user/getWxUserInfo 226ms 
+POST /api/user/getWxUserInfo 182ms 
+POST /api/user/getWxUserInfo 234ms 
+POST /api/user/getWxUserInfo 534ms 
+POST /api/user/getWxUserInfo 182ms 
+POST /api/user/getWxUserInfo 487ms 
+POST /api/user/getWxUserInfo 232ms 
+POST /api/user/getWxUserInfo 546ms 
+POST /api/user/getWxUserInfo 553ms 
+POST /api/user/getWxUserInfo 210ms 
+POST /api/user/getWxUserInfo 744ms 
+POST /api/user/getWxUserInfo 224ms 
+POST /api/user/getWxUserInfo 173ms 
+POST /api/user/getWxUserInfo 231ms 
+POST /api/user/getWxUserInfo 513ms 
+POST /api/user/getWxUserInfo 227ms 
+POST /api/user/getWxUserInfo 515ms 
+POST /api/user/getWxUserInfo 559ms 
+POST /api/user/getWxUserInfo 220ms 
+POST /api/user/getWxUserInfo 592ms 
+POST /api/user/getWxUserInfo 239ms 
+POST /api/user/getWxUserInfo 712ms 
+POST /api/user/getWxUserInfo 257ms 
+POST /api/user/getWxUserInfo 519ms 
+POST /api/user/getWxUserInfo 650ms 
+POST /api/user/getWxUserInfo 271ms 
+POST /api/user/getWxUserInfo 312ms 
+POST /api/user/getWxUserInfo 210ms 
+POST /api/user/getWxUserInfo 772ms 
+POST /api/user/getWxUserInfo 6595ms 
+POST /api/user/getWxUserInfo 550ms 
+POST /api/user/getWxUserInfo 247ms 
+POST /api/user/getWxUserInfo 616ms 
+POST /api/user/getWxUserInfo 236ms 
+POST /api/user/getWxUserInfo 400ms 
+POST /api/user/getWxUserInfo 627ms 
+POST /api/user/getWxUserInfo 188ms 
+POST /api/user/getWxUserInfo 549ms 
+POST /api/user/getWxUserInfo 693ms 
+POST /api/user/getWxUserInfo 536ms 
+POST /api/user/getWxUserInfo 469ms 
+POST /api/user/getWxUserInfo 510ms 
+POST /api/user/getWxUserInfo 484ms 
+POST /api/user/getWxUserInfo 557ms 
+POST /api/user/getWxUserInfo 674ms 
+POST /api/user/getWxUserInfo 551ms 
+POST /api/user/getWxUserInfo 229ms 
+POST /api/user/getWxUserInfo 247ms 
+POST /api/user/getWxUserInfo 197ms 
+POST /api/user/getWxUserInfo 220ms 
+POST /api/user/getWxUserInfo 540ms 
+POST /api/user/getWxUserInfo 494ms 
+【token验证错误！】POST /api/user/registerUser 3ms 
+【token验证错误！】POST /api/user/registerUser 1ms 
+POST /api/user/getWxUserInfo 248ms 
+POST /api/user/getWxUserInfo 251ms 
+POST /api/user/getWxUserInfo 204ms 
+POST /api/user/getWxUserInfo 533ms 
+POST /api/user/getWxUserInfo 269ms 
+POST /api/user/getWxUserInfo 226ms 
+POST /api/user/getWxUserInfo 503ms 
+POST /api/user/getWxUserInfo 250ms 
+POST /api/user/getWxUserInfo 521ms 
+POST /api/user/getWxUserInfo 266ms 
+POST /api/user/getWxUserInfo 213ms 
+POST /api/user/getWxUserInfo 241ms 
+POST /api/user/getWxUserInfo 504ms 
+POST /api/user/getWxUserInfo 224ms 
+POST /api/user/getWxUserInfo 465ms 
+POST /api/user/getWxUserInfo 216ms 
+POST /api/user/getWxUserInfo 458ms 
+POST /api/user/getWxUserInfo 200ms 
+POST /api/user/getWxUserInfo 542ms 
+POST /api/user/registerUser 0ms 
+POST /api/user/getWxUserInfo 520ms 
+【token验证错误！】POST /api/user/register 3ms 
+【token验证错误！】POST /api/user/register 1ms 
+【token验证错误！】POST /api/user/register 0ms 
+【token验证错误！】POST /api/user/register 1ms 
+【token验证错误！】POST /api/user/register 0ms 
+POST /api/user/register 8ms 
+POST /api/user/register 8ms 
+POST /api/user/getWxUserInfo 702ms 
+POST /api/user/getWxUserInfo 294ms 
+POST /api/user/getWxUserInfo 643ms 
+POST /api/user/register 190ms 
+POST /api/user/getWxUserInfo 596ms 
+POST /api/user/register 11ms 
+POST /api/user/register 46ms 
+POST /api/user/register 43ms 
+POST /api/user/getWxUserInfo 260ms 
+POST /api/user/getWxUserInfo 212ms 
+POST /api/user/getWxUserInfo 772ms 
+POST /api/user/register 4ms 
+POST /api/user/getWxUserInfo 236ms 
+POST /api/user/getWxUserInfo 216ms 
+POST /api/user/getWxUserInfo 385ms 
+POST /api/user/register 3ms 
+server errorError: Unknown column 'id' in 'field list'
+{"request":{"method":"POST","url":"/api/user/login","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/login","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"44","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/login","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/login 56ms 
+POST /api/user/login 2ms 
+POST /api/user/login 2ms 
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"GET","url":"/api/user/getUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=081uTCo72Gd4cS0CW2m72tAuo72uTCoq&state=1","cookie":"User-Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NDM2ODUxMTIsImV4cCI6MTU0MzY5MjMxMn0.mM7SA6iS5zPRuXMNqecvmKg5lWIQwsJsAQoxr01dPnk","connection":"close","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NDM2ODUxMTIsImV4cCI6MTU0MzY5MjMxMn0.mM7SA6iS5zPRuXMNqecvmKg5lWIQwsJsAQoxr01dPnk","aocept-encoding":"gzip, deflate","accept-language":"zh-CN,zh;q=0.8","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 662ms 
+server errorReferenceError: bcrypt is not defined
+{"request":{"method":"POST","url":"/api/user/register","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=021p5JGe0FbSSt1CWpEe05iEGe0p5JGI&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"395","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/register","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 682ms 
+server errorError: Data too long for column 'password' at row 1
+{"request":{"method":"POST","url":"/api/user/register","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=071r5YU31g7KRR1Q1YR31DxVU31r5YUC&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"395","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15436074104825661 webdebugger port/16536","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/register","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 469ms 
+POST /api/user/register 221ms 
+POST /api/user/login 149ms 
+POST /api/user/getWxUserInfo 713ms 
+server errorError: Column count doesn't match value count at row 1
+{"request":{"method":"POST","url":"/api/user/register","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=001hII7v1f0iVf0KFN8v1ai38v1hII7y&state=1","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"421","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.5.7 Language/zh_CN webview/1543688807787513 webdebugger port/14628","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/register","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 307ms 
+POST /api/user/getWxUserInfo 538ms 
+POST /api/user/register 181ms 
+server errorReferenceError: jwt is not defined
+{"request":{"method":"POST","url":"/api/user/login","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/login","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"47","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.5.7 Language/zh_CN webview/1543688807787513 webdebugger port/14628","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/login","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/login 217ms 
+POST /api/user/login 150ms 
+POST /api/user/login 142ms 
+POST /api/user/login 260ms 
+POST /api/user/login 147ms 
+POST /api/user/login 144ms 
+POST /api/user/login 450ms 
+POST /api/user/login 323ms 
+POST /api/user/login 161ms 
+POST /api/user/login 153ms 
+POST /api/user/login 240ms 
+POST /api/user/login 141ms 
+POST /api/user/login 140ms 
+POST /api/user/login 1ms 
+POST /api/user/login 2ms 
+POST /api/user/login 144ms 
+server errorError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+{"request":{"method":"GET","url":"/api/user/getUserInfo","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/login","cookie":"User-Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NDM2ODkyNjUsImV4cCI6MTU0MzY5NjQ2NX0.7MQqPntbhGYg_nkEDJe5SCiGvg8RnGGQEmbbE66Jw3Y","connection":"close","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NDM2ODkyNjUsImV4cCI6MTU0MzY5NjQ2NX0.7MQqPntbhGYg_nkEDJe5SCiGvg8RnGGQEmbbE66Jw3Y","accopt-encoding":"gzip, deflate","accept-language":"zh-CN,zh;q=0.8","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.5.7 Language/zh_CN webview/1543688807787513 webdebugger port/14628","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getUserInfo","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/login 213ms 
+GET /api/user/getUserInfo 8ms 
+GET /api/user/getUserInfo 6ms 
+GET /api/user/getUserInfo 3ms 
+POST /api/user/getWxUserInfo 603ms 
+POST /api/user/register 154ms 
+POST /api/user/login 146ms 
+POST /api/user/login 141ms 
+POST /api/user/login 137ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 4ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 4ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 1ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 1ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 1ms 
+GET /api/user/getUserInfo 2ms 
+POST /api/user/getWxUserInfo 512ms 
+GET /api/user/getUserInfo 2ms 
+POST /api/user/getWxUserInfo 512ms 
+GET /api/user/getUserInfo 210ms 
+POST /api/user/getWxUserInfo 510ms 
+POST /api/user/register 189ms 
+POST /api/user/getWxUserInfo 247ms 
+GET /api/user/getUserInfo 6ms 
+POST /api/user/getWxUserInfo 495ms 
+POST /api/user/register 145ms 
+POST /api/user/getWxUserInfo 205ms 
+GET /api/user/getUserInfo 3ms 
+POST /api/user/getWxUserInfo 572ms 
+POST /api/user/register 150ms 
+GET /api/user/getUserInfo 7ms 
+POST /api/user/getWxUserInfo 206ms 
+GET /api/user/getUserInfo 3ms 
+POST /api/user/getWxUserInfo 567ms 
+POST /api/user/register 154ms 
+POST /api/user/register 143ms 
+POST /api/user/login 142ms 
+POST /api/user/getWxUserInfo 620ms 
+server errorError: Data too long for column 'parent_id' at row 1
+{"request":{"method":"POST","url":"/api/user/register","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/register?code=0712Zo021YhiXP1FzxW11aOt0212Zo0p&state=172f2c950-f59b-11e8-bd9e-07e3a7d96aa2","origin":"http://cd810525457e1965.natapp.cc","content-type":"application/json;charset=UTF-8","connection":"close","accept-language":"zh-CN,zh;q=0.8","accept-encoding":"gzip, deflate","accept":"application/json, text/plain, */*","content-length":"457","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.5.7 Language/zh_CN webview/1543688807787513 webdebugger port/14628","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/register","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+POST /api/user/getWxUserInfo 239ms 
+POST /api/user/getWxUserInfo 564ms 
+POST /api/user/register 148ms 
+POST /api/user/getWxUserInfo 497ms 
+POST /api/user/register 146ms 
+POST /api/user/login 48ms 
+POST /api/user/login 5ms 
+POST /api/user/login 257ms 
+POST /api/user/login 4ms 
+POST /api/user/login 154ms 
+GET /api/user/getUserInfo 5ms 
+POST /api/user/login 152ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 15ms 
+GET /api/user/getUserInfo 10ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 3ms 
+【token验证错误！】GET /api/user/getUserInfo 5ms 
+POST /api/user/login 6ms 
+POST /api/user/login 142ms 
+GET /api/user/getUserInfo 2ms 
+【token验证错误！】GET /api/user/getUserInfo 48ms 
+GET /api/user/getUserInfo 109ms 
+GET /api/user/getUserInfo 7ms 
+【token验证错误！】GET /api/user/getUserInfo 16ms 
+POST /api/user/login 291ms 
+GET /api/user/getUserInfo 9ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 1ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 0ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 8ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 10ms 
+【token验证错误！】GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 8ms 
+【token验证错误！】GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 6ms 
+【token验证错误！】GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 8ms 
+【token验证错误！】GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 6ms 
+【token验证错误！】GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 5ms 
+【token验证错误！】GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 6ms 
+【token验证错误！】GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 6ms 
+POST /api/user/login 667ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 6ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 10ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 9ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 8ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 9ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 10ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 9ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 8ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 9ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 10ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 8ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 9ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 10ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 5ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 8ms 
+server errorReferenceError: nonceStr is not defined
+{"request":{"method":"GET","url":"/api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/personal/develop/share","cookie":"User-Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZTVkZDBhMC1mNTlkLTExZTgtYmQ5ZS0wN2UzYTdkOTZhYTIiLCJpYXQiOjE1NDM3NTk4NDcsImV4cCI6MTU0Mzc2NzA0N30.QHvKLzk7rUxQm98sd1Uq98rvH1oELWOYftC-2tVTTdQ","connection":"close","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZTVkZDBhMC1mNTlkLTExZTgtYmQ5ZS0wN2UzYTdkOTZhYTIiLCJpYXQiOjE1NDM3NTk4NDcsImV4cCI6MTU0Mzc2NzA0N30.QHvKLzk7rUxQm98sd1Uq98rvH1oELWOYftC-2tVTTdQ","aocept-encoding":"gzip, deflate","accept-language":"zh-CN,zh;q=0.8","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.5.7 Language/zh_CN webview/1543688807787513 webdebugger port/14628","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 11ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 10ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 8ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 3ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 2ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 2ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 9ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 2ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 2ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 1ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 1ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 2ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 1ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 7ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 1ms 
+GET /api/user/getUserInfo 892ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 3ms 
+GET /api/user/getUserInfo 31ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 4ms 
+GET /api/user/getJsapiSignature?url=cd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 14ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 1ms 
+GET /api/user/getUserInfo 15ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 1ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 1ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getUserInfo 22ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 3ms 
+GET /api/user/getUserInfo 4ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 1ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 1ms 
+GET /api/user/getUserInfo 16ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 3ms 
+【token验证错误！】GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 6ms 
+【token验证错误！】GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 6ms 
+【token验证错误！】GET /api/user/getUserInfo 1ms 
+POST /api/user/login 307ms 
+GET /api/user/getUserInfo 4ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 4ms 
+GET /api/user/getUserInfo 66ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 7ms 
+server errorReferenceError: nonceStr is not defined
+{"request":{"method":"GET","url":"/api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare","header":{"x-forwarded-host":"cd810525457e1965.natapp.cc","x-forwarded-proto":"http","x-forwarded-port":"80","x-forwarded-for":"127.0.0.1","x-real-ip":"222.247.83.198","x-natapp-ip":"222.247.83.198","referer":"http://cd810525457e1965.natapp.cc/personal/develop/share","cookie":"User-Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZTVkZDBhMC1mNTlkLTExZTgtYmQ5ZS0wN2UzYTdkOTZhYTIiLCJpYXQiOjE1NDM3NjczODQsImV4cCI6MTU0Mzc3NDU4NH0.avELse8pv-dPOWk21GoVknTm8DoxsYr2padgYA94lh4","connection":"close","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZTVkZDBhMC1mNTlkLTExZTgtYmQ5ZS0wN2UzYTdkOTZhYTIiLCJpYXQiOjE1NDM3NjczODQsImV4cCI6MTU0Mzc3NDU4NH0.avELse8pv-dPOWk21GoVknTm8DoxsYr2padgYA94lh4","aecept-encoding":"gzip, deflate","accept-language":"zh-CN,zh;q=0.8","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.5.7 Language/zh_CN webview/1543688807787513 webdebugger port/14628","host":"localhost:8888"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}
+GET /api/user/getUserInfo 84ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 7ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 9ms 
+POST /api/user/login 283ms 
+GET /api/user/getUserInfo 5ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 2ms 
+GET /api/user/getUserInfo 4ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 3ms 
+POST /api/user/login 139ms 
+GET /api/user/getUserInfo 2ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 2ms 
+GET /api/user/getUserInfo 63ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 7ms 
+GET /api/user/getUserInfo 67ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 8ms 
+POST /api/user/login 274ms 
+GET /api/user/getUserInfo 6ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 7ms 
+GET /api/user/getUserInfo 5ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 3ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 10ms 
+GET /api/user/getUserInfo 84ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 2ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 2ms 
+GET /api/user/getUserInfo 13ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 2ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 10ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2Fpersonal%2Fdevelop%2Fshare 849ms 
+GET /api/user/getUserInfo 189ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc 2ms 
+GET /api/user/getUserInfo 4ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc 1ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 3ms 
+GET /api/user/getUserInfo 8ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc 3ms 
+GET /api/user/getUserInfo 4ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2F 2ms 
+GET /api/user/getJsapiSignature?url=http:%2F%2Fcd810525457e1965.natapp.cc%2F 5ms 

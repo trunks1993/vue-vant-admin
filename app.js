@@ -4,6 +4,7 @@ const router2controller = require('./server/router2controller.js')
 const config = require('./config/config.local.js')
 const koaBodyparser = require('koa-bodyparser') // 获取ctx.request.body 获取post提交的数据
 const router = require('koa-router')()
+
 import { verify } from './server/utils'
 
 app.use(koaBodyparser())
@@ -17,23 +18,32 @@ function writeLog (data) {
 
 // 做拦截处理验证登录
 app.use(async (ctx, next) => {
+
+  if (ctx.url === '/') {
+    const sha1 = require('sha1')
+    const token = config.wechat.token
+    const signature = ctx.request.query.signature
+    const nonce = ctx.request.query.nonce
+    const timestamp = ctx.request.query.timestamp
+    const echostr = ctx.request.query.echostr
+    let str = [token, timestamp, nonce].sort().join('')
+    const sha = sha1(str)
+    ctx.body = sha === signature ? echostr + '' : 'failed'
+  }
+
 	// 如果是登录请求直接放行
 	const start = new Date()
-  if (ctx.url === '/api/user/login') {
-  	await next()
+  const result = await verify(ctx)
+  if (typeof result === 'object') {
+    ctx.state.userInfo = result
+    await next()
   } else {
-	  const result = await verify(ctx)
-	  if (typeof result === 'object') {
-	    ctx.state.userInfo = result
-	    await next()
-	  } else {
-	    writeLog('【' + result + '】')
-	    ctx.body = {
-	      success: false,
-	      data: {},
-	      message: result
-	    }
-	  }
+    writeLog('【' + result + '】')
+    ctx.body = {
+      success: false,
+      data: {},
+      message: result
+    }
   }
   const ms = new Date() - start
   writeLog(ctx.method + ' ' + ctx.url + ' ' + ms + 'ms \r\n')

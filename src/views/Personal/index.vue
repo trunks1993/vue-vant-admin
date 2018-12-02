@@ -2,7 +2,7 @@
   <div class="personal-container">
     <div class="header">
       <div class="wrapper">
-        <div class="img-box"><img :src="userInfo.avatar" /></div>
+        <div class="img-box"><img :src="userInfo.headimgurl" /></div>
           <div class="userinfo-box">
             <div class="nickname-box">
               <span class="name">{{ userInfo.name }}</span>

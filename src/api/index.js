@@ -15,3 +15,27 @@ export function getUserInfo(id) {
     params: { id }
   })
 }
+
+export function getWxUserInfo(data) {
+  return request({
+    url: '/user/getWxUserInfo',
+    method: 'post',
+    data
+  })
+}
+
+export function registerUser(data) {
+  return request({
+    url: '/user/register',
+    method: 'post',
+    data
+  })
+}
+
+export function getJsapiSignature(url) {
+  return request({
+    url: '/user/getJsapiSignature',
+    method: 'get',
+    params: { url }
+  })
+}

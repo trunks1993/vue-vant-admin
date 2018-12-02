@@ -18,12 +18,14 @@ v-for="i in 5"
         <i slot="icon" class="iconfont icon-home" />
       </grid-item>
     </grid> -->
+
+
   </div>
 </template>
 
 <script>
 // import { XHeader, Swiper, Marquee, MarqueeItem, Grid, GridItem } from 'vux'
-
+const url = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxffa4cadfa0268138&redirect_uri=http%3A%2F%2Fcd810525457e1965.natapp.cc%2Fregister&response_type=code&scope=snsapi_userinfo&state=abcde--1--72f2c950-f59b-11e8-bd9e-07e3a7d96aa2#wechat_redirect`
 export default {
   // components: {
   //   XHeader,

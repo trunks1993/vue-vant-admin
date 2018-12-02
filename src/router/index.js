@@ -5,8 +5,8 @@ import Home from '@/views/Home.vue';
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
+  // mode: 'history',
+  // base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
@@ -37,6 +37,10 @@ export default new Router({
     {
       path: '/personal/develop',
       component: () => import('@/views/Personal/Develop')
+    },
+    {
+      path: '/personal/develop/share',
+      component: () => import('@/views/Personal/Develop/Share')
     },
     {
       path: '/login',

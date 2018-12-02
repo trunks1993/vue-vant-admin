@@ -18,3 +18,43 @@ export function param2Obj(url) {
     '"}'
   )
 }
+
+export function trim(str) {
+  return str.replace(/(^\s*)|(\s*$)/g, "")
+}
+
+export function check_user_name(str) {
+  var str2 = "该用户名合法";
+  if ("" == str) {
+    str2 = "用户名为空";
+    return str2;
+  } else if ((str.length < 5) || (str.length > 20)) {
+    str2 = "用户名必须为5 ~ 20位";
+    return str2;
+  } else if (check_other_char(str)) {
+    str2 = "不能含有特殊字符";
+    return str2;
+  }
+  return str2;
+}
+// 验证用户名是否含有特殊字符
+function check_other_char(str) {
+  var arr = ["&", "\\", "/", "*", ">", "<", "@", "!"];
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < str.length; j++) {
+      if (arr[i] == str.charAt(j)) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+export function getUrlToken() {
+  let urlToken = ''
+  for (let i = 0; i < 6; i++) {
+    urlToken += Math.floor(Math.random() * 10);
+  }
+  const date = new Date()
+  return urlToken = date.getFullYear() + '' + date.getMonth()+ 1 + '' + date.getDate() + '' + urlToken
+}

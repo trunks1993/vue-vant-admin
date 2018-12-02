@@ -1,0 +1,20 @@
+CREATE TABLE t_user(
+    user_id INT NOT NULL   COMMENT '用户ID' ,
+    name VARCHAR(32)    COMMENT '真实姓名' ,
+    phone VARCHAR(32)   COMMENT '手机号码' ,
+    password VARCHAR(32)   COMMENT '登录密码' ,
+    parent_id VARCHAR(32)    COMMENT '上级用户' ,
+    role_id VARCHAR(32) NOT NULL   COMMENT '角色' ,
+    openid VARCHAR(32)    COMMENT 'openid' ,
+    nickname VARCHAR(32)    COMMENT '微信昵称' ,
+    sex INT    COMMENT '性别' ,
+    headimgurl VARCHAR(512)    COMMENT '微信头像' ,
+    country VARCHAR(32)    COMMENT '国家' ,
+    province VARCHAR(32)    COMMENT '省份' ,
+    city VARCHAR(32)    COMMENT '城市' ,
+    create_time DATETIME    COMMENT '创建时间' ,
+    update_time DATETIME    COMMENT '更新时间' ,
+    del_flag INT   DEFAULT 0 COMMENT '是否删除 0: 正常 1: 删除' ,
+    review_flag INT   DEFAULT 1 COMMENT '审核中 0: 正常 1: 正在审核' ,
+    PRIMARY KEY (user_id)
+) COMMENT = '用户表 ';

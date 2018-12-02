@@ -1,13 +1,8 @@
 <template>
   <div class="login-container">
-    <!-- <van-cell-group>
-      <van-field v-model="loginInfo.phone" label="手机号" placeholder="请输入用户名" required />
-      <van-field v-model="loginInfo.password" type="password" label="密码" placeholder="请输入密码" required />
-    </van-cell-group>
-    <van-button size="large" :loading="isLogin" @click.native="login">大号按钮</van-button> -->
     <div class="input-box" style="margin-top: 150px;">
       <i class="iconfont icon-username" />
-      <input v-model="loginInfo.phone" type="text" @focus="inputFocus">
+      <input v-model="loginInfo.username" type="text">
     </div>
     <div class="input-box" style="margin-top: 10px;">
       <i class="iconfont icon-password" />
@@ -19,13 +14,13 @@
 </template>
 <script>
 import { Toast } from 'vant';
-import { checkPhone } from '@/utils'
+import { checkPhone, check_user_name } from '@/utils'
 export default {
   data() {
     return {
       loginInfo: {
-        phone: "18073778398",
-        password: "123456"
+        username: "trunks123",
+        password: "123123"
       },
       isLogin: false,
       redirect: undefined,
@@ -44,13 +39,13 @@ export default {
     login() {
       // const phoneValid = this.$refs.phone.valid;
       // const passwordValid = this.$refs.password.valid;
-      if (checkPhone(this.loginInfo.phone) && this.loginInfo.password !== '') {
+      if (check_user_name(this.loginInfo.username) && this.loginInfo.password !== '') {
         this.isLogin = true;
         // 调用登录接口
         // 登录成功后继续跳转到被拦截的页面 this.$router.push({ path: this.redirect })
         this.$store.dispatch("Login", this.loginInfo).then(() => {
           this.isLogin = false;
-          this.$router.push({ path: this.redirect });
+          this.$router.push({ path: this.redirect || '/'});
         }).catch(err => {
           this.isLogin = false;
           Toast(err)
@@ -66,10 +61,6 @@ export default {
     },
     onDelete() {
       this.loginInfo.phone = this.loginInfo.phone.slice(0, this.loginInfo.phone.length - 1)
-    },
-    inputFocus() {
-      document.activeElement.blur()
-      this.showKeyBoard = true
     },
     inputPassword(val) {
     }
