@@ -39,3 +39,19 @@ export function getJsapiSignature(url) {
     params: { url }
   })
 }
+
+export function checkAuthorizeCode(data) {
+  return request({
+    url: '/user/checkAuthorizeCode',
+    method: 'post',
+    data
+  })
+}
+
+export function saveUrlToken(data) {
+  return request({
+    url: '/user/saveUrlToken',
+    method: 'post',
+    data
+  })
+}

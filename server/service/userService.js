@@ -1,7 +1,10 @@
 const userDao = require('./../dao/userDao.js');
 const bcrypt = require('bcryptjs');
-import { jwtObj } from '../../config/config.local.js'
+import { jwtObj, wechat, AuthorizeCode_ExTime } from '../../config/config.local.js'
 import jwt from 'jsonwebtoken'
+import { redisGet, redisSet } from '../utils/mysqlUtil'
+
+const rp = require('request-promise')
 
 const login = async user => {
   let msg = '用户名或密码错误'
@@ -47,14 +50,53 @@ const register = async user => {
   return { success: false, msg: '用户名已存在' }
 }
 
-const getUserByOpenid = async user => {
-  const userInfo = await userDao.getUserByOpenid(user.openid)
-  return userInfo
+const saveUrlAuthorizeCode = async (userId, roleId, authorizeCode) => {
+  redisSet(authorizeCode, userId + '&' + roleId, AuthorizeCode_ExTime)
+  return { success: true }
+}
+// 微信授权获取用户信息
+const getWxUser = async (code, authorizeCode) => {
+  const uidAndRid = await redisGet(authorizeCode)
+  
+  if (!uidAndRid) {
+    return { success: false, msg: '链接失效，授权码已过期请联系管理员'}
+  }
+  const userInfo = await userDao.getUserByAuthorizeCode(authorizeCode)
+  
+  if (userInfo) {
+    return { success: false, msg: '链接失效，授权码已被使用请联系管理员'}
+  }
+  
+  let acstokenAndOid = await redisGet(code)
+
+  if (!acstokenAndOid) {
+    const tokenResult = await rp({
+      method: 'GET',
+      uri: `https://api.weixin.qq.com/sns/oauth2/access_token?appid=${wechat.appid}&secret=${wechat.secret}&code=${code}&grant_type=authorization_code`,
+      json: true
+    })
+    acstokenAndOid = tokenResult.access_token + '&' + tokenResult.openid
+    redisSet(code, acstokenAndOid, tokenResult.expires_in)
+  }
+  // url授权码被用掉了永远都不会走这行查询 
+  // const existUser = await userDao.getUserByOpenid(acstokenAndOid.split('&')[1])
+
+  // if (existUser) {
+  //   return { success: false, msg: '您的微信已经被绑定'}
+  // }
+
+  const wxUser = await rp({
+    method: 'GET',
+    uri: `https://api.weixin.qq.com/sns/userinfo?access_token=${acstokenAndOid.split('&')[0]}&openid=${acstokenAndOid.split('&')[1]}&lang=zh_CN`,
+    json: true
+  })
+  return { success: true, data: Object.assign({}, wxUser, {authorizeCode: authorizeCode, parentId: uidAndRid.split('&')[0], roleId: uidAndRid.split('&')[1]})}
 }
 
 module.exports = {
   login,
   register,
   getUserById,
-  getUserByOpenid
+  getWxUser,
+  saveUrlAuthorizeCode
 }

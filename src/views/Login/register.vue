@@ -2,6 +2,7 @@
   <div class="register-container" v-if="!isLosePage">
     <van-cell-group>
       <van-field v-model="userInfo.roleId" disabled label="级别" />
+      <!-- <span>{{userInfo.roleId}}</span> -->
       <van-field v-model="userInfo.nickname" disabled label="微信昵称" />
       <van-field v-model="userInfo.name" required clearable label="真实姓名" :error-message="!nameValid ? '请输入真实姓名' : ''" placeholder="请输入真实姓名" />
       <van-field v-model="userInfo.username" required clearable label="用户名" :error-message="!usernameValid ? '请输入合法用户名' : ''" placeholder="请输入用户名" />
@@ -12,7 +13,7 @@
     </van-cell-group>
   </div>
   <div class="errmsg-container" v-else>
-    {{erroMsg}}
+    {{erroMsg || '正在加载...'}}
   </div>
 </template>
 <script>
@@ -22,19 +23,16 @@ import { getWxUserInfo, registerUser } from '@/api'
 export default {
   data() {
     return {
-      isLosePage: false,
+      isLosePage: true,
       userInfo: {
         name: '',
         username: '',
         phone: '',
-        password: '',
-        roleId: 0,
-        parentId: 1,
-        authorizeCode: ''
+        password: ''
       },
       surePassword: '',
       btnLoading: false,
-      erroMsg: '404'
+      erroMsg: ''
     }
   },
   computed: {
@@ -60,16 +58,19 @@ export default {
   },
   methods: {
     initWxUserInfo() {
-      const paramObj = param2Obj(location.href)
-      const code = paramObj.code
-      const state = paramObj.state
-      this.authorizeCode = state.split('--')[0]
-      this.userInfo.roleId = state.split('--')[1]
-      this.userInfo.parentId = state.split('--')[2]
-      getWxUserInfo({ code }).then(res => {
+      const code = this.$route.query.code
+      const authorizeCode = this.$route.query.state
+      
+      if (!code || !authorizeCode) {
+        this.isLosePage = true
+        this.erroMsg = '请联系管理员获取授权'
+        return
+      }
+      getWxUserInfo({ code, authorizeCode }).then(res => {
         const data = res.data
         if (data.success) {
-          this.userInfo = Object.assign({}, this.userInfo, data.data.userInfo)
+          this.isLosePage = false
+          this.userInfo = Object.assign({}, this.userInfo, data.data)
         } else {
           this.isLosePage = true
           this.erroMsg = data.msg
@@ -80,10 +81,8 @@ export default {
       this.btnLoading = true
       registerUser(this.userInfo).then(res => {
         const data = res.data
-        console.log(data)
         if (data.success) {
-
-          this.$router.push({path: '/login'})
+          this.$router.push({path: `/login?username=${this.userInfo.username}&password=${this.userInfo.password}`})
         }
         this.btnLoading = false
       })

@@ -22,8 +22,8 @@ const getUserById = async userId => {
 
 const insert = async user => {
   user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10)) 
-	const sql = `INSERT INTO t_user (user_id,name,username,phone,password,parent_id,role_id,openid,nickname,sex,headimgurl,country,province,city,create_time,update_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`
-	const row = await query(sql, [uuid.v1(), user.name, user.username,user.phone, user.password, user.parentId, user.roleId, user.openid, user.nickname, user.sex, user.headimgurl, user.country, user.province, user.city, new Date().toLocaleString(), new Date().toLocaleString()])
+	const sql = `INSERT INTO t_user (user_id,name,username,phone,password,parent_id,role_id,openid,nickname,sex,headimgurl,country,province,city,create_time,update_time,authorize_code) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`
+	const row = await query(sql, [uuid.v1(), user.name, user.username,user.phone, user.password, user.parentId, user.roleId, user.openid, user.nickname, user.sex, user.headimgurl, user.country, user.province, user.city, new Date().toLocaleString(), new Date().toLocaleString(), user.authorizeCode])
 	return row.affectedRows === 1
 }
 const update = async user => {
@@ -37,10 +37,17 @@ const getUserByOpenid = async openid => {
   return row
 }
 
+const getUserByAuthorizeCode = async authorizeCode => {
+  const sql = 'SELECT * FROM t_user where authorize_code = ?'
+  const [row] = await query(sql, authorizeCode)
+  return row
+}
+
 module.exports = {
   getUserById,
   getUserByUsername,
   insert,
   update,
-  getUserByOpenid
+  getUserByOpenid,
+  getUserByAuthorizeCode
 }

@@ -1,6 +1,6 @@
 const userService = require('./../service/userService.js')
 
-import { getWxUser, getSignature } from '../utils'
+import { getSignature } from '../utils'
 
 const login = async (ctx, next) => {
   const user = ctx.request.body
@@ -22,35 +22,19 @@ const getUserInfo = async (ctx, next) => {
 }
 
 const getWxUserInfo = async (ctx, next) => {
-  const { code } = ctx.request.body
-  const result = await getWxUser(code)
-  if (result.errcode) {
-    ctx.body = {
-      success: false,
-      msg: '该注册页面已经失效'
-    }
-  } else {
-    const userInfo = await userService.getUserByOpenid(result)
-    if (userInfo) {
-      ctx.body = {
-        success: false,
-        msg: '您的微信号已经注册'
-      }
-    } else {
-      ctx.body = {
-        success: true,
-        data: {
-          userInfo: result
-        }
-      }
-    }
-  }
+  const { code, authorizeCode } = ctx.request.body
+  ctx.body = await userService.getWxUser(code, authorizeCode)
 }
+
 const getJsapiSignature = async (ctx, next) => {
   const url = ctx.query.url
-  console.log(url)
   const data = await getSignature(url)
   ctx.body = { success: true, data }
+}
+
+const saveUrlToken = async (ctx, next) => {
+    const { userId, roleId, authorizeCode } = ctx.request.body
+    ctx.body = await userService.saveUrlAuthorizeCode(userId, roleId, authorizeCode) 
 }
 
 module.exports = {
@@ -59,4 +43,5 @@ module.exports = {
   'GET /user/getUserInfo': getUserInfo,
   'GET /user/getJsapiSignature': getJsapiSignature,
   'POST /user/getWxUserInfo': getWxUserInfo,
+  'POST /user/saveUrlToken': saveUrlToken,
 }

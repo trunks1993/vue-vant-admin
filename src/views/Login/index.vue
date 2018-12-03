@@ -19,13 +19,17 @@ export default {
   data() {
     return {
       loginInfo: {
-        username: "trunks123",
-        password: "123123"
+        username: "",
+        password: ""
       },
       isLogin: false,
       redirect: undefined,
       showKeyBoard: false
     };
+  },
+  created() {
+    this.loginInfo.username = this.$route.query.username || ''
+    this.loginInfo.password = this.$route.query.password || ''
   },
   watch: {
     $route: {

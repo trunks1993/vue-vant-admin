@@ -53,8 +53,8 @@ function check_other_char(str) {
 export function getUrlToken() {
   let urlToken = ''
   for (let i = 0; i < 6; i++) {
-    urlToken += Math.floor(Math.random() * 10);
+    urlToken += Math.floor(Math.random() * 10)
   }
   const date = new Date()
-  return urlToken = date.getFullYear() + '' + date.getMonth()+ 1 + '' + date.getDate() + '' + urlToken
+  return urlToken = date.getFullYear() + '' + (date.getMonth() + 1) + '' + date.getDate() + '' + urlToken
 }

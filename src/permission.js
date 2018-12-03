@@ -2,7 +2,7 @@ import router from '@/router';
 import store from '@/store';
 import { getToken } from '@/utils/auth'; // 验权
 
-const whiteList = ['/login', '/', '/register']; // 不重定向白名单
+const whiteList = ['/login', '/', '/register', '/personal/develop/to']; // 不重定向白名单
 router.beforeEach((to, from, next) => {
   if (getToken()) {
     if (to.path === '/login') {
@@ -23,7 +23,7 @@ router.beforeEach((to, from, next) => {
       }
     }
   } else {
-    if (whiteList.indexOf(to.path) !== -1) {
+    if (whiteList.indexOf(to.path) !== -1 || whiteList.indexOf(to.path.split('to/')[0] + 'to') !== -1) {
       next()
     } else {
       next(`/login?redirect=${to.path}`)

@@ -25,32 +25,6 @@ export const verify = async ctx => {
   })
 }
 
-// 微信授权获取用户信息
-export const getWxUser = async code => {
-
-  const tokenOptions = {
-    method: 'GET',
-    uri: `https://api.weixin.qq.com/sns/oauth2/access_token?appid=${wechat.appid}&secret=${wechat.secret}&code=${code}&grant_type=authorization_code`,
-    json: true
-  }
-
-  const tokenResult = await rp(tokenOptions)
-
-  if (tokenResult.errcode) return tokenResult
-
-  const userInfoOption = {
-    method: 'GET',
-    uri: `https://api.weixin.qq.com/sns/userinfo?access_token=${tokenResult.access_token}&openid=${tokenResult.openid}&lang=zh_CN`,
-    json: true
-  }
-
-  const userInfoResult = await rp(userInfoOption)
-
-  if (userInfoResult.errcode) return userInfoResult
-
-  return userInfoResult
-}
-
 export const getSignature = async url => {
   let jsapi_ticket = await redisGet('jsapi_ticket')
   if (!jsapi_ticket) {

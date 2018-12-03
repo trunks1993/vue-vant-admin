@@ -6,10 +6,10 @@
           <div class="develop-title">
             生成下级代理链接
           </div>
-          <van-button type="warning" size="large" @click="toShare(1)">官方</van-button>
-          <van-button type="default" size="large" @click="toShare(2)">董事</van-button>
-          <van-button type="default" size="large" @click="toShare(3)">合伙人</van-button>
-          <van-button type="default" size="large" @click="toShare(4)">天使</van-button>
+          <van-button type="warning" size="large" @click="toShare('abc')">官方</van-button>
+          <van-button type="default" size="large" @click="toShare('def')">董事</van-button>
+          <van-button type="default" size="large" @click="toShare('ghi')">合伙人</van-button>
+          <van-button type="default" size="large" @click="toShare('jkl')">天使</van-button>
         </van-tab>
         <van-tab title="代理审核">
           <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="onLoad">
@@ -82,9 +82,8 @@ export default {
       }, 500);
     },
     toShare(roleId) {
-      // this.copyValue = 'hello world1111'
-      // document.getElementById('coypbtn').click()
-      this.$router.push({path: '/personal/develop/share'})
+      // this.$router.push({path: '/personal/develop/share', query: { roleId }})
+      window.location.href = '/personal/develop/share?roleId=' + roleId
     }
   }
 }

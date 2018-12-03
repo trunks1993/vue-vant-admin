@@ -19,7 +19,7 @@ function writeLog (data) {
 // 做拦截处理验证登录
 app.use(async (ctx, next) => {
 
-  if (ctx.url === '/') {
+  if (ctx.url.split('?')[0] === '/') {
     const sha1 = require('sha1')
     const token = config.wechat.token
     const signature = ctx.request.query.signature

@@ -17,5 +17,5 @@ export const wechat = {
 	secret: '2c7d1b20b0af81ba25ceb759b6b5b869',  //填写你自己的appSecret
 	token: 'trunks'  //填写你自己的token
 }
-
-export const whiteList = ['/api/user/login', '/api/user/getWxUserInfo', '/api/user/register']
+export const AuthorizeCode_ExTime = 1800
+export const whiteList = ['/api/user/login', '/api/user/getWxUserInfo', '/api/user/register', '/api/user/checkAuthorizeCode']
