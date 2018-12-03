@@ -83,6 +83,8 @@ export default {
         const data = res.data
         if (data.success) {
           this.$router.push({path: `/login?username=${this.userInfo.username}&password=${this.userInfo.password}`})
+        } else {
+          this.$toast(data.msg)
         }
         this.btnLoading = false
       })

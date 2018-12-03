@@ -16,9 +16,9 @@
             <van-cell v-for="(item, i) in list" :key="i">
               <div class="review-item">
                 <div class="review-item-user">
-                  <img src="http://wx.qlogo.cn/mmopen/JnRrPCQD19KypNwocDJMoiagM3WHROBPicFZ0hVXGFHFmaFNYx3ic2Q73eibSDXLmDEmOCsYFcianK0FyYCYQRegjvIDtf0Lp6JUp/64">
+                  <img :src="item.headimgurl">
                   <div class="review-item-user-info">
-                    <span>{{item.nickname}}</span>
+                    <span>{{item.name}}({{item.nickname}})</span>
                     <span>{{item.phone}}</span>
                   </div>
                 </div>
@@ -50,16 +50,18 @@
 <script>
 import { mapGetters } from 'vuex'
 import { getUrlToken } from '@/utils'
-import Clipboard from 'clipboard'
-const btnCopy = new Clipboard('btn')
-
+import { getProxyList } from '@/api'
 export default {
   data() {
     return {
       loading: false,
       finished: false,
       list: [],
-      copyValue: 'hello world'
+      listQuery: {
+        userId: this.$store.getters.userInfo.user_id,
+        currentPage: 1,
+        pageSize: 10
+      }
     }
   },
   computed: {
@@ -68,18 +70,16 @@ export default {
   methods: {
     onLoad() {
       // 异步更新数据
-      setTimeout(() => {
-        for (let i = 0; i < 10; i++) {
-          this.list.push({ nickname: 'trunks' + i, phone: '18077778888' });
+      getProxyList(this.listQuery).then(res => {
+        this.loading = false
+        const data = res.data
+        this.list.push(...data.data.list)
+        if (this.list.length < data.data.total) {
+          this.listQuery.currentPage++
+        } else {
+          this.finished = true
         }
-        // 加载状态结束
-        this.loading = false;
-
-        // 数据全部加载完成
-        if (this.list.length >= 40) {
-          this.finished = true;
-        }
-      }, 500);
+      })
     },
     toShare(roleId) {
       // this.$router.push({path: '/personal/develop/share', query: { roleId }})

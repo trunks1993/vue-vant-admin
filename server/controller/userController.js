@@ -33,8 +33,13 @@ const getJsapiSignature = async (ctx, next) => {
 }
 
 const saveUrlToken = async (ctx, next) => {
-    const { userId, roleId, authorizeCode } = ctx.request.body
-    ctx.body = await userService.saveUrlAuthorizeCode(userId, roleId, authorizeCode) 
+  const { userId, roleId, authorizeCode } = ctx.request.body
+  ctx.body = await userService.saveUrlAuthorizeCode(userId, roleId, authorizeCode)
+}
+
+const getProxyList = async (ctx, next) => {
+  const listQuery = ctx.request.body
+  ctx.body = await userService.getProxyListByUserId(listQuery)
 }
 
 module.exports = {
@@ -44,4 +49,5 @@ module.exports = {
   'GET /user/getJsapiSignature': getJsapiSignature,
   'POST /user/getWxUserInfo': getWxUserInfo,
   'POST /user/saveUrlToken': saveUrlToken,
+  'POST /user/getProxyList': getProxyList
 }

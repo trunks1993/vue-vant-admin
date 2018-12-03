@@ -79,11 +79,11 @@ const getWxUser = async (code, authorizeCode) => {
     redisSet(code, acstokenAndOid, tokenResult.expires_in)
   }
   // url授权码被用掉了永远都不会走这行查询 
-  // const existUser = await userDao.getUserByOpenid(acstokenAndOid.split('&')[1])
+  const existUser = await userDao.getUserByOpenid(acstokenAndOid.split('&')[1])
 
-  // if (existUser) {
-  //   return { success: false, msg: '您的微信已经被绑定'}
-  // }
+  if (existUser) {
+    return { success: false, msg: '您的微信已经被绑定'}
+  }
 
   const wxUser = await rp({
     method: 'GET',
@@ -93,10 +93,16 @@ const getWxUser = async (code, authorizeCode) => {
   return { success: true, data: Object.assign({}, wxUser, {authorizeCode: authorizeCode, parentId: uidAndRid.split('&')[0], roleId: uidAndRid.split('&')[1]})}
 }
 
+// 分页查询代理
+const getProxyListByUserId = async listQuery => {
+ const result = await userDao.getUserListByParentId(listQuery.userId, listQuery.currentPage, listQuery.pageSize)
+ return {success: true, data: result}
+}
 module.exports = {
   login,
   register,
   getUserById,
   getWxUser,
-  saveUrlAuthorizeCode
+  saveUrlAuthorizeCode,
+  getProxyListByUserId
 }

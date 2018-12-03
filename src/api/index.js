@@ -55,3 +55,11 @@ export function saveUrlToken(data) {
     data
   })
 }
+
+export function getProxyList(data) {
+  return request({
+    url: '/user/getProxyList',
+    method: 'post',
+    data
+  })
+}

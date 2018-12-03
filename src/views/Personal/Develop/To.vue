@@ -1,6 +1,5 @@
 <script>
 import { checkAuthorizeCode } from '@/api'
-
 export default {
   created() {
     const authorizeCode = this.$route.params.state
