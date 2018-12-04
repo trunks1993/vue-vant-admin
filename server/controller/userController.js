@@ -13,8 +13,8 @@ const register = async (ctx, next) => {
 }
 
 const getUserInfo = async (ctx, next) => {
-  const userId = ctx.state.userInfo.userId
-  const userInfo = await userService.getUserById(userId)
+  const user_id = ctx.state.userInfo.user_id
+  const userInfo = await userService.getUserById(user_id)
   ctx.body = {
     success: true,
     data: userInfo
@@ -22,8 +22,8 @@ const getUserInfo = async (ctx, next) => {
 }
 
 const getWxUserInfo = async (ctx, next) => {
-  const { code, authorizeCode } = ctx.request.body
-  ctx.body = await userService.getWxUser(code, authorizeCode)
+  const { code, authorize_code } = ctx.request.body
+  ctx.body = await userService.getWxUser(code, authorize_code)
 }
 
 const getJsapiSignature = async (ctx, next) => {
@@ -33,8 +33,8 @@ const getJsapiSignature = async (ctx, next) => {
 }
 
 const saveUrlToken = async (ctx, next) => {
-  const { userId, roleId, authorizeCode } = ctx.request.body
-  ctx.body = await userService.saveUrlAuthorizeCode(userId, roleId, authorizeCode)
+  const { user_id, role_id, authorize_code } = ctx.request.body
+  ctx.body = await userService.saveUrlAuthorizeCode(user_id, role_id, authorize_code)
 }
 
 const getProxyList = async (ctx, next) => {

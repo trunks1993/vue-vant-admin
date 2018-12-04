@@ -58,7 +58,7 @@ export default {
       finished: false,
       list: [],
       listQuery: {
-        userId: this.$store.getters.userInfo.user_id,
+        user_id: this.$store.getters.userInfo.user_id,
         currentPage: 1,
         pageSize: 10
       }
@@ -81,9 +81,9 @@ export default {
         }
       })
     },
-    toShare(roleId) {
-      // this.$router.push({path: '/personal/develop/share', query: { roleId }})
-      window.location.href = '/personal/develop/share?roleId=' + roleId
+    toShare(role_id) {
+      // this.$router.push({path: '/personal/develop/share', query: { role_id }})
+      window.location.href = '/personal/develop/share?role_id=' + role_id
     }
   }
 }

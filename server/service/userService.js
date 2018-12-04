@@ -2,7 +2,7 @@ const userDao = require('./../dao/userDao.js');
 const bcrypt = require('bcryptjs');
 import { jwtObj, wechat, AuthorizeCode_ExTime } from '../../config/config.local.js'
 import jwt from 'jsonwebtoken'
-import { redisGet, redisSet } from '../utils/mysqlUtil'
+import { redisGet, redisSet } from '../utils/dbUtils'
 
 const rp = require('request-promise')
 
@@ -21,8 +21,8 @@ const login = async user => {
         return {
           success: true,
           data: {
-            userId: userInfo.user_id,
-            token: jwt.sign({ userId: userInfo.user_id }, jwtObj.secret, { expiresIn: jwtObj.expiresIn })
+            user_id: userInfo.user_id,
+            token: jwt.sign({ user_id: userInfo.user_id }, jwtObj.secret, { expiresIn: jwtObj.expiresIn })
           }
         }
       }
@@ -34,8 +34,8 @@ const login = async user => {
   }
 }
 
-const getUserById = async userId => {
-  return userDao.getUserById(userId)
+const getUserById = async user_id => {
+  return userDao.getUserById(user_id)
 }
 
 const register = async user => {
@@ -50,18 +50,18 @@ const register = async user => {
   return { success: false, msg: '用户名已存在' }
 }
 
-const saveUrlAuthorizeCode = async (userId, roleId, authorizeCode) => {
-  redisSet(authorizeCode, userId + '&' + roleId, AuthorizeCode_ExTime)
+const saveUrlAuthorizeCode = async (user_id, role_id, authorize_code) => {
+  redisSet(authorize_code, user_id + '&' + role_id, AuthorizeCode_ExTime)
   return { success: true }
 }
 // 微信授权获取用户信息
-const getWxUser = async (code, authorizeCode) => {
-  const uidAndRid = await redisGet(authorizeCode)
+const getWxUser = async (code, authorize_code) => {
+  const uidAndRid = await redisGet(authorize_code)
   
   if (!uidAndRid) {
     return { success: false, msg: '链接失效，授权码已过期请联系管理员'}
   }
-  const userInfo = await userDao.getUserByAuthorizeCode(authorizeCode)
+  const userInfo = await userDao.getUserByAuthorizeCode(authorize_code)
   
   if (userInfo) {
     return { success: false, msg: '链接失效，授权码已被使用请联系管理员'}
@@ -90,12 +90,12 @@ const getWxUser = async (code, authorizeCode) => {
     uri: `https://api.weixin.qq.com/sns/userinfo?access_token=${acstokenAndOid.split('&')[0]}&openid=${acstokenAndOid.split('&')[1]}&lang=zh_CN`,
     json: true
   })
-  return { success: true, data: Object.assign({}, wxUser, {authorizeCode: authorizeCode, parentId: uidAndRid.split('&')[0], roleId: uidAndRid.split('&')[1]})}
+  return { success: true, data: Object.assign({}, wxUser, {authorize_code: authorize_code, parent_id: uidAndRid.split('&')[0], role_id: uidAndRid.split('&')[1]})}
 }
 
 // 分页查询代理
 const getProxyListByUserId = async listQuery => {
- const result = await userDao.getUserListByParentId(listQuery.userId, listQuery.currentPage, listQuery.pageSize)
+ const result = await userDao.getUserListByParentId(listQuery.user_id, listQuery.currentPage, listQuery.pageSize)
  return {success: true, data: result}
 }
 module.exports = {

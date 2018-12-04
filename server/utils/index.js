@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken'
 import { jwtObj, whiteList, wechat } from '../../config/config.local.js'
-import { redisGet, redisSet } from './mysqlUtil'
+import { redisGet, redisSet } from './dbUtils'
 import uuid from 'node-uuid'
 const sha1 = require('sha1')
 

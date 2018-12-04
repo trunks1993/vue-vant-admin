@@ -1,8 +1,8 @@
 <template>
   <div class="register-container" v-if="!isLosePage">
     <van-cell-group>
-      <van-field v-model="userInfo.roleId" disabled label="级别" />
-      <!-- <span>{{userInfo.roleId}}</span> -->
+      <van-field v-model="userInfo.role_id" disabled label="级别" />
+      <!-- <span>{{userInfo.role_id}}</span> -->
       <van-field v-model="userInfo.nickname" disabled label="微信昵称" />
       <van-field v-model="userInfo.name" required clearable label="真实姓名" :error-message="!nameValid ? '请输入真实姓名' : ''" placeholder="请输入真实姓名" />
       <van-field v-model="userInfo.username" required clearable label="用户名" :error-message="!usernameValid ? '请输入合法用户名' : ''" placeholder="请输入用户名" />
@@ -59,14 +59,14 @@ export default {
   methods: {
     initWxUserInfo() {
       const code = this.$route.query.code
-      const authorizeCode = this.$route.query.state
+      const authorize_code = this.$route.query.state
       
-      if (!code || !authorizeCode) {
+      if (!code || !authorize_code) {
         this.isLosePage = true
         this.erroMsg = '请联系管理员获取授权'
         return
       }
-      getWxUserInfo({ code, authorizeCode }).then(res => {
+      getWxUserInfo({ code, authorize_code }).then(res => {
         const data = res.data
         if (data.success) {
           this.isLosePage = false

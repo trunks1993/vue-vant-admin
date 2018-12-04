@@ -16,18 +16,18 @@ export default {
   },
   methods: {
     initWx() {
-      const { roleId } = this.$route.query
-      if (!roleId) {
+      const { role_id } = this.$route.query
+      if (!role_id) {
         return window.location.href = '/personal/develop'
       }
-      const userId = this.$store.getters.userInfo.user_id
-      const authorizeCode = getUrlToken()
+      const user_id = this.$store.getters.userInfo.user_id
+      const authorize_code = getUrlToken()
 
       const share_title = this.$store.getters.userInfo.name + '邀请你成为代理商'
-      const share_link = 'http://cd810525457e1965.natapp.cc/personal/develop/to/' + authorizeCode
+      const share_link = 'http://cd810525457e1965.natapp.cc/personal/develop/to/' + authorize_code
       const share_img = this.$store.getters.userInfo.headimgurl
 
-      saveUrlToken({userId, roleId, authorizeCode}).then(res => {
+      saveUrlToken({user_id, role_id, authorize_code}).then(res => {
         const data = res.data
         if (data.success) {
           getJsapiSignature(location.href).then(res => {
