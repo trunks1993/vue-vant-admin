@@ -6,11 +6,11 @@
           <div class="userinfo-box">
             <div class="nickname-box">
               <span class="name">{{ userInfo.name }}</span>
-              <span class="tag" v-if="userInfo.role">{{ userInfo.role.roleName }}</span>
+              <span class="tag" v-if="userInfo.role_name">{{ userInfo.role_name }}</span>
             </div>
             <div v-if="userInfo.parent">
               上级：{{ userInfo.parent.name }} | 级别：{{
-              userInfo.parent.role.roleName
+              userInfo.parent.role_name
               }}
             </div>
           </div>
@@ -46,7 +46,7 @@ export default {
     return {
       menus: [
         { name: '扫码发货', icon: require('../../assets/scan.png') },
-        { name: '我要下单', icon: require('../../assets/shopping.png') },
+        { name: '我要下单', icon: require('../../assets/shopping.png'), path: '/product/list' },
         { name: '代理查询', icon: require('../../assets/search.png') },
         { name: '在线客服', icon: require('../../assets/service.png') }
       ],

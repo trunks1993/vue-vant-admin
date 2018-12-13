@@ -53,6 +53,10 @@ export default new Router({
     {
       path: '/register',
       component: () => import('@/views/Login/register')
+    },
+    {
+      path: '/product/list',
+      component: () => import('@/views/Product')
     }
   ]
 });

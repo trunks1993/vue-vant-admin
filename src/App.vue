@@ -7,7 +7,7 @@
         <i slot="icon" class="iconfont icon-home" />
       </van-tabbar-item>
       <van-tabbar-item :to="{ path: '/answer' }">
-        <span>标签</span>
+        <span>问答</span>
         <i slot="icon" class="iconfont icon-shu" />
       </van-tabbar-item>
       <van-tabbar-item :to="{ path: '/personal' }">

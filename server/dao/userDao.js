@@ -9,8 +9,12 @@ const getUserByUsername = async user => {
 }
 
 const getUserById = async user_id => {
-  const sql = 'SELECT * FROM t_user where user_id = ?'
+  const sql = 'SELECT r.role_name, u.* FROM t_role r left join t_user u on u.user_id = ? where u.role_id = r.role_id'
   const [row] = await query(sql, user_id)
+  if (row.parent_id) {
+    const [row2] = await query(sql, row.parent_id)
+    row.parent = row2
+  }
   return row
 }
 
