@@ -40,20 +40,22 @@ export default {
     }
   },
   methods: {
-    login() {
+    async login() {
       // const phoneValid = this.$refs.phone.valid;
       // const passwordValid = this.$refs.password.valid;
       if (check_user_name(this.loginInfo.username) && this.loginInfo.password !== '') {
         this.isLogin = true;
         // 调用登录接口
         // 登录成功后继续跳转到被拦截的页面 this.$router.push({ path: this.redirect })
-        this.$store.dispatch("Login", this.loginInfo).then(() => {
+        try {
+          const res = await this.$store.dispatch("Login", this.loginInfo)
           this.isLogin = false;
+          if(!res.success) return Toast(res.msg)
           this.$router.push({ path: this.redirect || '/'});
-        }).catch(err => {
+        } catch (e) {
           this.isLogin = false;
-          Toast(err)
-        })
+          Toast(e.toString())
+        }
       }
     },
     onInput(value) {

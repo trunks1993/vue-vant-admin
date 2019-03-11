@@ -15,12 +15,14 @@ const login = async user => {
         msg = '此帐号正在审核中'
         return {
 			  	success: false,
-			  	msg: msg
+			  	msg
 			  }
       } else {
+        msg = '登录成功'
         return {
           success: true,
-          data: {
+          msg,
+          authData: {
             user_id: userInfo.user_id,
             token: jwt.sign({ user_id: userInfo.user_id }, jwtObj.secret, { expiresIn: jwtObj.expiresIn })
           }
@@ -35,7 +37,12 @@ const login = async user => {
 }
 
 const getUserById = async user_id => {
-  return userDao.getUserById(user_id)
+  const userInfo = await userDao.getUserById(user_id)
+  return {
+    success: true,
+    userInfo,
+    msg: '拉取用户信息成功'
+  }
 }
 
 const register = async user => {

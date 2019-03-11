@@ -14,11 +14,7 @@ const register = async (ctx, next) => {
 
 const getUserInfo = async (ctx, next) => {
   const user_id = ctx.state.userInfo.user_id
-  const userInfo = await userService.getUserById(user_id)
-  ctx.body = {
-    success: true,
-    data: userInfo
-  }
+  ctx.body = await userService.getUserById(user_id)
 }
 
 const getWxUserInfo = async (ctx, next) => {

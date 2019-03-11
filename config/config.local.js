@@ -1,4 +1,4 @@
-export const port = 8888
+export const port = 8889
 export const database = {
   host: 'localhost',
   port: 3306,

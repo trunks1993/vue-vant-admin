@@ -1,6 +1,6 @@
 <template>
   <div class="product-container">
-    <van-sku v-model="showBase" :sku="sku" :goods="goods_info" :goods-id="goodsId" :hide-stock="true" :close-on-click-overlay="true" @buy-clicked="onBuyClicked" />
+    <van-sku v-model="showBase" ref="sku" :sku="sku" :goods="goods_info" :goods-id="goodsId" :hide-stock="true" :close-on-click-overlay="true" @buy-clicked="onBuyClicked" />
     <div class="category-box">
       <div class="category-box-item" :class="{active: item.category_id === activeId}" v-for="(item, index) in items" :key="index">
         {{item.category_name}}
@@ -69,7 +69,8 @@ export default {
       this.showBase = true
     },
     onBuyClicked() {
-
+      const skuData = this.$refs.sku.getSkuData()
+      console.log(skuData)
     }
   }
 }
